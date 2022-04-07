@@ -81,8 +81,8 @@ test:
 #
 production:
   <<: *default
-  database: backend_production
-  username: backend
+  database: <d5r0gfskdf68> #backend_production
+  username: <qdruzmalhdroav> #backend
   password: <%= ENV["BACKEND_DATABASE_PASSWORD"] %>
   adapter: postgresql
   encoding: unicode
