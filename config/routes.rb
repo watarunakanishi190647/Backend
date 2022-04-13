@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
 
   post "/graphql", to: "graphql#execute"
+  get "/graphql", to: "graphql#execute"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
