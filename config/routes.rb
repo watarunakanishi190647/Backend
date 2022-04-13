@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/graphql'
   end
 
-  post "still-ravine-42221.herokuapp.com", to: "graphql#execute"
-  # post "/graphql", to: "graphql#execute"
+  # post "still-ravine-42221.herokuapp.com", to: "graphql#execute"
+  post "/graphql", to: "graphql#execute"
 
   # get "/graphql", to: "graphql#execute"
 
