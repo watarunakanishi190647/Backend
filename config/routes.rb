@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # resources :graphql
   root "graphql#execute"
   # post "still-ravine-42221.herokuapp.com", to: "graphql#execute"
-  get "/", to: "graphql#execute"
+  get "/graphql", to: "graphql#execute"
   post "/graphql", to: "graphql#execute"
 
 
