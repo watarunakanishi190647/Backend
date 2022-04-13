@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "graphql#execute"
   
   if Rails.env.development?
     mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/graphql'
@@ -10,5 +11,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root to: "graphql#execute"
 end
