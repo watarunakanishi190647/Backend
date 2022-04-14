@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   end
   
   
-  root "graphql#index"
+  root "graphql#execute"
   # post "still-ravine-42221.herokuapp.com", to: "graphql#execute"
   get "/graphql", to: "graphql#execute"
+  
   post "/graphql", to: "graphql#execute"
 
 

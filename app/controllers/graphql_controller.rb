@@ -8,10 +8,6 @@ class GraphqlController < ApplicationController
   #   hoge = 'これがJSONとして返却される'
   #   render json: {message: hoge}
   # end
-   
-  def index
-    render json: { posts: Post.limit(50)) }
-  end
 
   def execute
     variables = prepare_variables(params[:variables])
