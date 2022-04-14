@@ -4,10 +4,10 @@ Rails.application.routes.draw do
     mount GraphiQL::Rails::Engine, at: '/graphiql', graphql_path: '/graphql'
   end
   
-  # resources :graphql
-  root "graphql#execute"
+  resources :graphql, only: :index
+   root "graphql#execute"
   # post "still-ravine-42221.herokuapp.com", to: "graphql#execute"
-  get "/graphql", to: "graphql#execute"
+  # get "/graphql", to: "graphql#execute"
   post "/graphql", to: "graphql#execute"
 
 
