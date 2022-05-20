@@ -1,24 +1,10 @@
-# README
+使用した技術: Next.js / Rails / GraphQL / ApolloClient / PostgreSQL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+こだわった点： 
 
-* Ruby version
+・色んな機能をつけたりしてバグが起きたり見づらいものになるより、全体としての完成度を意識して作りました。
 
-* System dependencies
+・開発のだいたいの流れ、全体像を知りたいと思い、バックエンドと API レベルで通信するアプリケーションを作りました。なので ApolloServer などを使わずにバックエンドも学習し、API には GraphQL を用いて作りました。
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+・１つの１つの技術をある程度基礎レベルまで学習するのに時間がかかりました。
